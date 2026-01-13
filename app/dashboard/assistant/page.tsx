@@ -40,7 +40,7 @@ export default async function AssistantPage() {
   return (
     <div className="flex flex-col gap-6 p-8">
       {/* Enhanced Header with Gradient */}
-      <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-purple-600 via-pink-600 to-blue-600 p-8 text-white shadow-2xl">
+      <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-teal-600 via-cyan-600 to-teal-700 p-8 text-white shadow-2xl">
         <div className="absolute inset-0 bg-grid-white/10 [mask-image:linear-gradient(0deg,transparent,black)]" />
         <div className="relative z-10">
           <div className="flex items-start justify-between">
@@ -50,7 +50,7 @@ export default async function AssistantPage() {
               </div>
               <div>
                 <h1 className="text-4xl font-bold tracking-tight">AI Contract Assistant</h1>
-                <p className="mt-2 text-purple-100">
+                <p className="mt-2 text-cyan-100">
                   Ask questions about your contracts and get instant answers with evidence
                 </p>
               </div>

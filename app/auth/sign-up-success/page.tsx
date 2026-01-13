@@ -16,7 +16,7 @@ function SignUpSuccessContent({ needsConfirmation }: { needsConfirmation: boolea
               </div>
               <CardTitle className="text-2xl">{needsConfirmation ? "Check Your Email" : "Account Created!"}</CardTitle>
               <CardDescription>
-                {needsConfirmation ? "Confirm your email to get started" : "Welcome to Contract Intelligence Hub"}
+                {needsConfirmation ? "Confirm your email to get started" : "Welcome to FLAG AI Hub"}
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">

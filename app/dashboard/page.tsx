@@ -102,7 +102,7 @@ export default function DashboardPage() {
   return (
     <div className="flex flex-col gap-8 p-8">
       {/* Header with Gradient */}
-      <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-blue-600 via-blue-700 to-purple-700 p-8 text-white shadow-2xl">
+      <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-teal-600 via-cyan-700 to-teal-700 p-8 text-white shadow-2xl">
         <div className="absolute inset-0 bg-grid-white/10 [mask-image:linear-gradient(0deg,transparent,black)]" />
         <div className="relative z-10 flex items-start justify-between">
           <div className="flex items-center gap-4">
@@ -110,8 +110,8 @@ export default function DashboardPage() {
               <Activity className="h-8 w-8" />
             </div>
             <div>
-              <h1 className="text-4xl font-bold tracking-tight">Contract Intelligence Hub</h1>
-              <p className="mt-2 text-blue-100">
+              <h1 className="text-4xl font-bold tracking-tight">FLAG AI Hub</h1>
+              <p className="mt-2 text-cyan-100">
                 {hasContracts
                   ? "AI-powered contract lifecycle management and insights"
                   : "Welcome! Start by uploading your first contract"}
@@ -160,12 +160,12 @@ export default function DashboardPage() {
         <>
           {/* Enhanced Metrics Grid */}
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            <Card className="group relative overflow-hidden border-l-4 border-l-blue-600 transition-all hover:shadow-xl hover:scale-[1.02]">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-0 transition-opacity group-hover:opacity-100 dark:from-blue-950" />
+            <Card className="group relative overflow-hidden border-l-4 border-l-teal-600 transition-all hover:shadow-xl hover:scale-[1.02]">
+              <div className="absolute inset-0 bg-gradient-to-br from-teal-50 to-transparent opacity-0 transition-opacity group-hover:opacity-100 dark:from-teal-950" />
               <CardHeader className="relative flex flex-row items-center justify-between space-y-0 pb-2">
                 <CardTitle className="text-sm font-medium">Active Contracts</CardTitle>
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-100 dark:bg-blue-950">
-                  <FileText className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-teal-100 dark:bg-teal-950">
+                  <FileText className="h-6 w-6 text-teal-600 dark:text-teal-400" />
                 </div>
               </CardHeader>
               <CardContent className="relative">
@@ -293,7 +293,7 @@ export default function DashboardPage() {
                             <Cell
                               key={`cell-${index}`}
                               fill={
-                                index === 0 ? "hsl(217, 91%, 60%)" :
+                                index === 0 ? "hsl(180, 70%, 50%)" :
                                 index === 1 ? "hsl(271, 91%, 65%)" :
                                 index === 2 ? "hsl(142, 76%, 36%)" :
                                 index === 3 ? "hsl(38, 92%, 50%)" :
@@ -330,9 +330,9 @@ export default function DashboardPage() {
                           yAxisId="left"
                           type="monotone"
                           dataKey="contracts"
-                          stroke="hsl(217, 91%, 60%)"
+                          stroke="hsl(180, 70%, 50%)"
                           strokeWidth={3}
-                          dot={{ fill: "hsl(217, 91%, 60%)", r: 5 }}
+                          dot={{ fill: "hsl(180, 70%, 50%)", r: 5 }}
                           activeDot={{ r: 7 }}
                         />
                         <Line
@@ -465,7 +465,7 @@ export default function DashboardPage() {
                         className="group flex items-start justify-between rounded-xl border bg-gradient-to-r from-card to-muted/20 p-4 transition-all hover:shadow-md hover:scale-[1.02]"
                       >
                         <div className="flex gap-3">
-                          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 text-white shadow-lg">
+                          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-teal-500 to-cyan-600 text-white shadow-lg">
                             <FileText className="h-6 w-6" />
                           </div>
                           <div className="space-y-1">
@@ -541,7 +541,7 @@ export default function DashboardPage() {
                               ? "bg-gradient-to-br from-red-500 to-red-600 text-white"
                               : obligation.priority === "high"
                                 ? "bg-gradient-to-br from-amber-500 to-amber-600 text-white"
-                                : "bg-gradient-to-br from-blue-500 to-blue-600 text-white"
+                                : "bg-gradient-to-br from-teal-500 to-cyan-600 text-white"
                           }`}>
                             <Target className="h-6 w-6" />
                           </div>

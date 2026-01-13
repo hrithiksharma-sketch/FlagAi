@@ -8,7 +8,7 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Contract Intelligence Hub",
+  title: "FLAG AI Hub",
   description:
     "AI-powered contract management that turns unstructured contracts into actionable insights, obligations, and answers for Legal, Finance, Sales and Service teams.",
   generator: "v0.app",

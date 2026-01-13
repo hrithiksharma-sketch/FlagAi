@@ -65,7 +65,7 @@ export function AssistantInterface({ userId, contracts }: AssistantInterfaceProp
             <div className="flex flex-col gap-6">
               {messages.length === 0 ? (
                 <div className="flex flex-col items-center justify-center py-16 text-center">
-                  <div className="mb-6 flex h-20 w-20 items-center justify-center rounded-2xl bg-gradient-to-br from-purple-500 to-pink-500 text-white shadow-2xl">
+                  <div className="mb-6 flex h-20 w-20 items-center justify-center rounded-2xl bg-gradient-to-br from-teal-500 to-cyan-500 text-white shadow-2xl">
                     <Bot className="h-10 w-10" />
                   </div>
                   <h3 className="mb-2 text-2xl font-bold">Ask me anything about your contracts</h3>
@@ -97,8 +97,8 @@ export function AssistantInterface({ userId, contracts }: AssistantInterfaceProp
                     <div
                       className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl shadow-lg ${
                         message.role === "user"
-                          ? "bg-gradient-to-br from-blue-500 to-blue-600 text-white"
-                          : "bg-gradient-to-br from-purple-500 to-pink-500 text-white"
+                          ? "bg-gradient-to-br from-cyan-500 to-teal-600 text-white"
+                          : "bg-gradient-to-br from-teal-500 to-cyan-500 text-white"
                       }`}
                     >
                       {message.role === "user" ? <User className="h-5 w-5" /> : <Bot className="h-5 w-5" />}
@@ -152,7 +152,7 @@ export function AssistantInterface({ userId, contracts }: AssistantInterfaceProp
 
               {status === "streaming" && (
                 <div className="flex gap-4">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 text-white shadow-lg">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-teal-500 to-cyan-500 text-white shadow-lg">
                     <Bot className="h-5 w-5" />
                   </div>
                   <div className="flex flex-col gap-2">

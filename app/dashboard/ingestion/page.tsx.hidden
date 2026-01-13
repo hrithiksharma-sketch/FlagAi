@@ -46,7 +46,7 @@ export default function IngestionPage() {
       { day: "Sun", processed: 42, failed: 0 },
     ],
     byType: [
-      { type: "PDF", count: 856, color: "hsl(217, 91%, 60%)" },
+      { type: "PDF", count: 856, color: "hsl(180, 70%, 50%)" },
       { type: "DOCX", count: 391, color: "hsl(271, 91%, 65%)" },
     ],
   }
@@ -62,7 +62,7 @@ export default function IngestionPage() {
   return (
     <div className="flex flex-col gap-6 p-8">
       {/* Enhanced Header with Gradient */}
-      <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-purple-600 via-blue-600 to-cyan-600 p-8 text-white shadow-2xl">
+      <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-teal-600 via-cyan-600 to-teal-700 p-8 text-white shadow-2xl">
         <div className="absolute inset-0 bg-grid-white/10 [mask-image:linear-gradient(0deg,transparent,black)]" />
         <div className="relative z-10">
           <div className="flex items-start justify-between mb-4">
@@ -72,7 +72,7 @@ export default function IngestionPage() {
               </div>
               <div>
                 <h1 className="text-4xl font-bold tracking-tight">Contract Ingestion & Processing</h1>
-                <p className="mt-2 text-blue-100">
+                <p className="mt-2 text-cyan-100">
                   Bulk upload documents with real-time AI extraction and clause analysis
                 </p>
               </div>
@@ -153,9 +153,9 @@ export default function IngestionPage() {
         </Card>
 
         <Card className="group relative overflow-hidden transition-all hover:shadow-xl hover:scale-[1.02]">
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-0 transition-opacity group-hover:opacity-100 dark:from-blue-950" />
+          <div className="absolute inset-0 bg-gradient-to-br from-teal-50 to-transparent opacity-0 transition-opacity group-hover:opacity-100 dark:from-teal-950" />
           <CardContent className="relative flex items-center gap-3 p-6">
-            <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 text-white shadow-lg">
+            <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-teal-500 to-cyan-600 text-white shadow-lg">
               <Clock className="h-7 w-7" />
             </div>
             <div>
@@ -247,10 +247,10 @@ export default function IngestionPage() {
 
       {/* Upload & Processing */}
       <div className="grid gap-6 lg:grid-cols-2">
-        <Card className="transition-all hover:shadow-xl border-2">
-          <CardHeader className="border-b bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-950 dark:to-purple-950">
+        <Card className="transition-all hover:shadow-xl border-2 bg-gradient-to-br from-teal-950/50 to-cyan-950/50">
+          <CardHeader className="border-b bg-gradient-to-r from-teal-900/50 to-purple-900/50">
             <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-blue-600 to-purple-600 text-white">
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-teal-600 to-purple-600 text-white">
                 <Upload className="h-5 w-5" />
               </div>
               <div>
@@ -278,8 +278,8 @@ export default function IngestionPage() {
           </CardContent>
         </Card>
 
-        <Card className="transition-all hover:shadow-xl border-2">
-          <CardHeader className="border-b bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-950 dark:to-pink-950">
+        <Card className="transition-all hover:shadow-xl border-2 bg-gradient-to-br from-purple-950/50 to-pink-950/50">
+          <CardHeader className="border-b bg-gradient-to-r from-purple-900/50 to-pink-900/50">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-3">
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-purple-600 to-pink-600 text-white">
@@ -353,7 +353,7 @@ export default function IngestionPage() {
               config={{
                 pdf: {
                   label: "PDF",
-                  color: "hsl(217, 91%, 60%)",
+                  color: "hsl(180, 70%, 50%)",
                 },
                 docx: {
                   label: "DOCX",
@@ -397,10 +397,10 @@ export default function IngestionPage() {
       {/* Advanced Features */}
       <div className="grid gap-6 md:grid-cols-3">
         <Card className="group relative overflow-hidden transition-all hover:shadow-lg">
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
+          <div className="absolute inset-0 bg-gradient-to-br from-teal-500/10 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
           <CardContent className="relative p-6">
-            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-100 dark:bg-blue-950 mb-4">
-              <Brain className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-teal-100 dark:bg-teal-950 mb-4">
+              <Brain className="h-6 w-6 text-teal-600 dark:text-teal-400" />
             </div>
             <h3 className="font-semibold mb-2">Smart Clause Detection</h3>
             <p className="text-sm text-muted-foreground">

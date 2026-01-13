@@ -18,7 +18,7 @@ export default function SignUpPage() {
   return (
     <div className="grid min-h-screen lg:grid-cols-2">
       {/* Left Panel - Branding */}
-      <div className="relative hidden flex-col justify-between bg-gradient-to-br from-blue-600 via-blue-700 to-blue-900 p-12 text-white lg:flex">
+      <div className="relative hidden flex-col justify-between bg-gradient-to-br from-teal-600 via-cyan-700 to-teal-900 p-12 text-white lg:flex">
         <div className="absolute inset-0 bg-grid-white/10" />
         <div className="relative z-10">
           <div className="flex items-center gap-3">
@@ -26,8 +26,8 @@ export default function SignUpPage() {
               <FileSearch className="h-7 w-7" />
             </div>
             <div className="flex flex-col">
-              <h1 className="text-2xl font-bold">Contract Intelligence</h1>
-              <p className="text-sm text-blue-100">Powered by AI</p>
+              <h1 className="text-2xl font-bold">FLAG AI</h1>
+              <p className="text-sm text-cyan-100">Powered by AI</p>
             </div>
           </div>
         </div>
@@ -39,7 +39,7 @@ export default function SignUpPage() {
               <br />
               actionable insights
             </h2>
-            <p className="text-lg text-blue-100">AI-powered contract analysis for Legal, Finance, and Sales teams</p>
+            <p className="text-lg text-cyan-100">AI-powered contract analysis for Legal, Finance, and Sales teams</p>
           </div>
         </div>
       </div>
@@ -52,7 +52,7 @@ export default function SignUpPage() {
               <FileSearch className="h-7 w-7 text-primary-foreground" />
             </div>
             <h2 className="text-3xl font-bold tracking-tight">Try the Demo</h2>
-            <p className="text-muted-foreground">Explore Contract Intelligence Hub features</p>
+            <p className="text-muted-foreground">Explore FLAG AI Hub features</p>
           </div>
 
           <div className="space-y-6">
